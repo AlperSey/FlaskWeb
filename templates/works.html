@@ -1,0 +1,24 @@
+{% extends "new_layout.html" %}
+
+{% block body %}
+<h3>Yetenekler</h3>
+<hr>
+
+{% if works %}
+
+
+
+
+<ul class="list-group">
+    {% for work in works %}
+        <li class="list-group-item">{{work.title}}</li>
+    {% endfor %}
+  </ul>
+
+{% else %}
+<div class="alert alert-danger">Bu blokta henüz yetenek bulunmuyor</div>
+
+{% endif %}
+
+
+{% endblock body %}

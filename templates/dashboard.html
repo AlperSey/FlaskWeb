@@ -1,0 +1,13 @@
+{% extends "new_layout.html" %}
+
+
+{% block body %}
+
+
+<h3>Kontrol Paneli</h3>
+<small> Hoş Geldiniz {{session["username"]}}</small>
+<hr>
+
+
+<a href="/add_works" class="btn btn-danger">Yetenek Ekle</a>
+{% endblock body %}

@@ -1,0 +1,30 @@
+{% extends "new_layout.html" %}
+
+{% block body %}
+<div class="jumbotron text-center" >
+
+    <h3>Hoş Geldiniz STULANCE</h3>
+    <p>Teknolojinin baş döndürücü gelişimi ve dijitalleşme, hayatın her alanında olduğu gibi iş dünyasında da büyük değişimleri beraberinde getirdi. Pandemiyle birlikte ofisten uzak çalışma alışkanlığının yaygınlaşması, iş yapış şekillerimizi kalıcı olarak değiştirdi. Bu noktada freelance çalışma da oldukça popüler bir hal aldı. Gelin freelance çalışma nedir, ne gibi avantajları ve dezavantajları bulunur, birlikte inceleyelim.
+
+        Freelance Nedir?
+        
+        Freelance, en basit tanımıyla “serbest çalışma” anlamına gelir. Freelance çalışma; herhangi bir kurumdan, ofis ortamından ve mesai saatleri sınırlamasından  bağımsız çalışma imkânı sunar. Sınırları olabildiğince geniş olan freelance işler, günümüz şartlarına son derece uygundur.
+        
+        Freelance iş nedir sorusuna verilecek cevabın kapsamı son derece geniştir. Hemen hemen tüm sektörlerde freelance olarak çalışma imkânı bulunabilir. Freelance çalışanlar, yeteneklerine ve uzmanlıklarına göre dünyanın her yerinden istedikleri işi sürdürme fırsatına sahip olur.
+        
+     </p>
+
+</div>
+
+
+<ul>
+    {% for article in articles %}
+        <li>Article Id: {{article.id}} - Title:{{article.title}} - Content:{{article.content}}</li>
+    {% endfor %}
+</ul>
+
+
+
+
+
+{% endblock body %}
